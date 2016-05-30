@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> {{ page.title }} </title>
-    <!-- Link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  </head>
-  
-  <body>
-    <nav>
-      <ul>
-        <li><a href="/"> Home </a></li>
-        <li><a href="/About"> About </a></li>
-        <li><a href="/resume/160529.pdf" class="btn btn-default pull-right" title="Download Resume"> Resume </a></li>
-        <li><a href="/Blog"> Blog </a></li>
-      </ul>
-    </nav>
-    
-    <div class="container">
-      {{ content }}
-    </div>
-    
-    <footer>
-      <ul>
-        <li><a href="mailto:trunghieule94@gmail.com"> Email </a></li>
-        <li><a href="https://github.com/hieule22"> My GitHub Repository </a></li>
-      </ul>
-    </footer>
-  </body>
+<html lang="en">
+	
+	{% include head.html %}
+	
+	<body>
+		<div class="container">
+			
+			{% include header.html %}
+			
+			{{ content }}
+			
+			{% include footer.html %}
+		
+		</div> <!-- /container -->
+	
+	
+		{% include scripts.html %}
+	
+	</body>
+
 </html>
