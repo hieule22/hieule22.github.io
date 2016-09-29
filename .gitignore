@@ -1,1 +1,7 @@
 _site/
+
+# Emacs autosaves
+*~
+
+# Hidden files
+*.DS_STORE*
